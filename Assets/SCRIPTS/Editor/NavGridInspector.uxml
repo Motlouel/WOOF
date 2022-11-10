@@ -1,0 +1,9 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="True">
+    <ui:SliderInt picking-mode="Ignore" label="Grid Dimension" value="8" high-value="100" name="GridDimension" usage-hints="DynamicColor" show-input-field="true" low-value="1" inverted="false" binding-path="gridDimension" />
+    <ui:Slider picking-mode="Ignore" label="Cell Size" value="1" high-value="10" name="CellSize" low-value="0.01" show-input-field="true" binding-path="gridCellSize" />
+    <uie:Vector3Field label="Grid Offset" name="GridOffset" binding-path="gridOffset" />
+    <ui:VisualElement style="flex-direction: row; margin-top: 16px;">
+        <ui:Button text="Clear" display-tooltip-when-elided="true" name="Clear" binding-path="ClearBake" style="flex-grow: 1; flex-basis: 0; flex-direction: column; flex-wrap: wrap; background-color: rgba(149, 56, 70, 255);" />
+        <ui:Button text="Bake" display-tooltip-when-elided="true" name="Bake" binding-path="Bake" style="flex-grow: 1; flex-basis: 0; flex-direction: column; flex-wrap: wrap; background-color: rgba(86, 135, 68, 255);" />
+    </ui:VisualElement>
+</ui:UXML>
